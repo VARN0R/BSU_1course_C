@@ -38,6 +38,16 @@ __________________________________
 | 21 |  22 |  ||23||   24 |   25 |
 -------------------------------------------------------------------------------
 */
+
+
+
+/*
+!!!WARNING!!!
+This code was written in a Linux UBUNTU text editor, 
+therefore some libraries may be incompatible with Windows.  
+
+If you have any errors, try to find analogues of the libraries used.
+*/
 #include <iomanip>
 #include <time.h>
 #include <iostream>

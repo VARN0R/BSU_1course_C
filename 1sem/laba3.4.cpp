@@ -14,6 +14,16 @@ an integer sequence in which each member of di satisfies the condition 0 < di < 
 dk * 10k + dk–1 * 10k–1 + ... d0 = 3^200
 -------------------------------------------------------------------------------
 */
+
+
+
+/*
+!!!WARNING!!!
+This code was written in a Linux UBUNTU text editor, 
+therefore some libraries may be incompatible with Windows.  
+
+If you have any errors, try to find analogues of the libraries used.
+*/
 #include <iostream>
 #include <math.h>
 using namespace std;

@@ -20,6 +20,16 @@ via the menu using enum.
 Find the 5 largest elements in an integer array in one view.
 -------------------------------------------------------------------------------
 */
+
+
+
+/*
+!!!WARNING!!!
+This code was written in a Linux UBUNTU text editor, 
+therefore some libraries may be incompatible with Windows.  
+
+If you have any errors, try to find analogues of the libraries used.
+*/
 #include <iostream>
 using namespace std;
 int n;
