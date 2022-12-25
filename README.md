@@ -5,6 +5,8 @@ The description of the task is contained both in the code itself and in the manu
 https://drive.google.com/drive/folders/1OmPpx96xmex4CasVPxQE9QQAAcjcKTk7?usp=sharing
 
 Tasks from the folder 1 sim, starting from 3.1 to 6.1, I did with the help of the manual 2022. All other tasks with the help of the 2019 manual.
+Tasks from 1,2 to 3,1 - 10 variant
+Tasks from 3.1 to 6.1 - 2 variant
 
 It should also be noted that some of the tasks are written on the Linux Ubuntu operating system in a text editor, and some on the Windows 10 operating system in the Visual Studio development environment. Therefore, there is a possibility that if you have any errors, then these are simply the wrong libraries. Try to find analogs of the libraries used that are suitable for your operating system. 
 Otherwise, you can use the online compiler: 
