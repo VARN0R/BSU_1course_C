@@ -35,7 +35,7 @@ int main()
 	int b1 = 0;
 	int b15 = 0;
 	int b2 = 0;
-	cout << "Ââåäèòå ÷èñëî = ";
+	cout << "Введите число= ";
 	cin >> n;
 	b0 = (n >> 0) & 1;
 	cout << b0 << " - b0\n";

@@ -1,21 +1,3 @@
-
-
-
-
-
-
-//ДОПИЛИВАЕТСЯ
-//ДОПИЛИВАЕТСЯ
-//ДОПИЛИВАЕТСЯ
-//ДОПИЛИВАЕТСЯ
-//ДОПИЛИВАЕТСЯ
-//ДОПИЛИВАЕТСЯ
-//ДОПИЛИВАЕТСЯ
-//ДОПИЛИВАЕТСЯ
-//ДОПИЛИВАЕТСЯ
-//ДОПИЛИВАЕТСЯ
-//ДОПИЛИВАЕТСЯ
-
 /*
 TASK CONDITION
 -------------------------------------------------------------------------------
@@ -49,63 +31,44 @@ therefore some libraries may be incompatible with Windows.
 
 If you have any errors, try to find analogues of the libraries used.
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #include <iostream>
 #include <bitset>
-//#include <cmath>
-//#include <algorithm>
 using namespace std;
 
-//ØÀÕÌÀÒÛ
+//шахматы
 int main() {
 
 	setlocale(0, "");
 
 	int slon_X, slon_Y, kon_X, kon_Y;
 
-	cout << "êîîðäèíàòû ñëîíà\n";
+	cout << "координаты слона\n";
 	cin >> slon_X >> slon_Y;
-	cout << "êîîðäèíàòû êîíÿ\n";
+	cout << "координаты коня\n";
 	cin >> kon_X >> kon_Y;
 
 	if (slon_X > 8 || slon_Y > 8 || kon_X > 8 || kon_Y > 8 || slon_X < 1 || slon_Y < 1 || kon_X < 1 || kon_Y < 1) {
-		cout << "âû âûøëè çà ðàìêè âñåãî âîçìîæíîãî, âû ïî÷òè óïðàâëÿåòå ìèðîì" << endl;
+		cout << "вы вышли за рамки всего возможного, вы почти управляете миром" << endl;
 		return 0;
 	}
 
 	if (slon_X == kon_X && slon_Y == kon_Y) {
-		cout << "íå ìîæåò áûòü" << endl;
+		cout << "не может быть" << endl;
 		return 0;
 	}
 	
 	if (abs(slon_X - kon_X) == abs(slon_Y - kon_Y)) {		
-		cout << "ñëîí áüåò êîíÿ" << endl;
+		cout << "слон бьет коня" << endl;
 		return 0;
 	}
 
 	if (abs(slon_X - kon_X) - abs(slon_Y - kon_Y) == 1) {
-		cout << "êîíü áüžò ñëîíà" << endl;
-		system("pause");
+		cout << "конь бьёт слона" << endl;
 		return 0;
 
 	}
 
-	cout << "Ôèãóðû íå áüþò äðóã äðóãà" << endl;
+	cout << "Фигуры не бьют друг друга" << endl;
 	return 0;
 }
 

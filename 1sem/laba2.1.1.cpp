@@ -22,17 +22,14 @@ If you have any errors, try to find analogues of the libraries used.
 #include <algorithm>
 using namespace std;
 
-// Äàíî íàòóðàëüíîå  n.  Âåðíî ëè, ÷òî ýòî ÷èñëî ñîäåðæèò áîëåå k îäèíàêîâûõ öèôð? 
-
 int main() {
-	setlocale(0, "");
     int n;
 	int k;
 	
-	cout << "Ââåäèòå ÷èñëî n: ";
+	cout << "Enter number n: ";
 	cin >> n;
 
-	cout << "Ââåäèòå ÷èñëî k: ";
+	cout << "Enter number k: ";
 	cin >> k;
 
 
