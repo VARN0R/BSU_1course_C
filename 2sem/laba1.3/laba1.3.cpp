@@ -19,8 +19,8 @@ int *ReturnMaxValue(int* Array, int amount_elements){
 	if (max_element != nullptr){
 		static bool hasPrinted = false;//Чтобы при вызове функции сout отображался только один раз
 		if (!hasPrinted){
-		cout << "The maximum Fibonacci number before changing the array: " << endl;
-		hasPrinted = true;
+            cout << "The maximum Fibonacci number before changing the array: " << endl;
+            hasPrinted = true;
 		}
 		return max_element;
 
@@ -28,8 +28,8 @@ int *ReturnMaxValue(int* Array, int amount_elements){
 	else{
 		static bool hasPrinted = false;
 		if (!hasPrinted){
-		cout << "The maximum number of the array before it is changed(No Fibonacci numbers found): " << endl;
-		hasPrinted = true;
+            cout << "The maximum number of the array before it is changed(No Fibonacci numbers found): " << endl;
+            hasPrinted = true;
 		}
 		return max_element_array;
 	}	
