@@ -1,22 +1,36 @@
-#include <iostream>
-#include "laba1.3.func.h"
+#include<bits/stdc++.h>
+#include "laba1.3.h"
 using namespace std;
-int main(){
-    int amount_elements;
 
-    cout << "Input amount elements of array" << endl;
-    cin >> amount_elements;
-    
-    int* Array = new int [amount_elements];
-    cout << "Input elements of array" << endl;
-    for (int i = 0; i < amount_elements; i++){
-        cin >> Array[i];
-    }
-    //cout << ReturnMaxValue(Array, amount_elements) << endl;
-    *ReturnMaxValue(Array, amount_elements) = 0;
-    cout << "Измененный массив: " << endl;
-    for (int i = 0; i < amount_elements; i++){
-        cout << Array[i] << " ";	
-    }
-    return 0;
+int *ReturnMaxValue(int* Array, int amount_elements){
+	int *max_element = nullptr;
+	int *max_element_array = Array;
+	for (int i = 0; i < amount_elements; i++){
+		if(Array[i]>*max_element_array){
+			max_element_array = Array + i;
+		}
+		if (Array[i+2]==Array[i]+Array[i+1]){
+			if(!max_element || Array[i+2]>*max_element){
+			max_element = Array+i+2;
+			}
+		}
+	}
+
+	if (max_element != nullptr){
+		static bool hasPrinted = false;//Чтобы при вызове функции сout отображался только один раз
+		if (!hasPrinted){
+		cout << "The maximum Fibonacci number before changing the array: " << endl;
+		hasPrinted = true;
+		}
+		return max_element;
+
+	}
+	else{
+		static bool hasPrinted = false;
+		if (!hasPrinted){
+		cout << "The maximum number of the array before it is changed(No Fibonacci numbers found): " << endl;
+		hasPrinted = true;
+		}
+		return max_element_array;
+	}	
 }
