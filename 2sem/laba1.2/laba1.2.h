@@ -1,4 +1,4 @@
-#pragma once
+#pragma once //Чтобы скомпилилось один раз, дабы избежать ошибок
 
 #include<bits/stdc++.h>
 

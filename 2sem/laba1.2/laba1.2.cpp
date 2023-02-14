@@ -1,4 +1,4 @@
-#include "laba1.1.h"
+#include "laba1.2.h"
 
 using namespace std;
 

@@ -36,23 +36,28 @@ therefore some libraries may be incompatible with Windows.
 If you have any errors, try to find analogues of the libraries used.
 */
 #include<bits/stdc++.h> 
-#include "laba1.1.h"
+#include "laba1.2.h"
 using namespace std;
 
 int main(){
     int counter_words = 0;
     const int MAX = 500;
-    char str[MAX]{};//Переменная, которая хранит word[i] в функции low_registr
-    int length_word = 0;//Переменная, которая определяет длину слова в функции low_registr
+    
     char** words = new char*[MAX];
     for (int i = 0; i < MAX; i++){
         words[i] = new char[MAX];
     }
-    char sentence[MAX]{};
+    
+    char sentence[MAX]{};//Cтрока, в которую записывается исходный текст
 
     get_words(words, MAX, sentence, counter_words);
+    
+    char str[MAX]{};//Переменная, которая хранит word[i] в функции low_registr
+    int length_word = 0;//Переменная, которая определяет длину слова в функции low_registr
     low_registr(words, counter_words, str, length_word);
+    
     sort_words(words, counter_words);
+    
     cout << "Text consists of " << counter_words << " words." << endl;
     cout << "The words of the text are displayed in ascending order depending on the number of letters." << endl;
     for (int i = 0; i < counter_words; i++){
