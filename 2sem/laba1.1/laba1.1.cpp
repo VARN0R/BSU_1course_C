@@ -8,7 +8,7 @@ void input(int** a, int size){
 	int row2 = size - 1;
 	int col2 = size - 1;
 	int iter = 1;
-	amount_elements = size * size;
+	int amount_elements = size * size;
     while (iter <= amount_elements){
 		for (int i = col1; i <= col2; i++){
 			a[row2][i] = iter++;

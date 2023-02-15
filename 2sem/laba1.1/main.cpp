@@ -45,7 +45,7 @@ int main() {
 	int size_matrix{};
 	cout << "Enter size matrix: " << endl;
 	cin >> size_matrix;
-	int** a{} =  new int* [size_matrix] {0};
+	int** a = new int* [size_matrix] {0};
 	for (int i = 0; i < size_matrix; i++){
 		a[i] = new int[size_matrix] {0};
 	}
