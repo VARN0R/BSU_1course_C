@@ -6,7 +6,8 @@ TASK CONDITION
 Если такого числа нет, то возвратить ссылку на любое из максимальных чисел массива. 
 Замените значение этого элемента нулевым значением.
 
-P.S. Я выполнил задачу, используя указатель, а не ссылку.
+P.S. Я выполнил задачу, используя указатель, а не ссылку. Реализация этой задачи с помощью ссылки
+находится в папке laba1.3
 -------------------------------------------------------------------------------
 ENGLISH
 Write a function that returns a reference to the maximum number 
@@ -14,7 +15,8 @@ found in a given array of arbitrary size (function argument), which is a Fibonac
 If there is no such number, then return a reference to any of the maximum numbers in the array. 
 Replace the value of this element with a null value. 
 
-P.S. I completed the task using a pointer, not a link.
+P.S. I completed the task using a pointer, not a link. The implementation of this task using the link
+is located in the folder laba1.3
 -------------------------------------------------------------------------------
 */
 
@@ -28,7 +30,7 @@ therefore some libraries may be incompatible with Windows.
 If you have any errors, try to find analogues of the libraries used.
 */
 #include<bits/stdc++.h>
-#include "laba1.3.h"
+#include "laba1.3.variant2.h"
 using namespace std;
 int main(){
     int amount_elements;
@@ -49,5 +51,6 @@ int main(){
     for (int i = 0; i < amount_elements; i++){
         cout << Array[i] << " ";	
     }
+    delete[]Array;
     return 0;
 }

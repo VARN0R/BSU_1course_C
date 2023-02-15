@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-#include "laba1.3.h"
+#include "laba1.3.variant2.h"
 using namespace std;
 
 int *ReturnMaxValue(int* Array, int amount_elements){
