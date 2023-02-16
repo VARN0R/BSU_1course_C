@@ -48,12 +48,13 @@ int main(){
         words[i] = new char[MAX];
     }
     
-    char sentence[MAX]{};//Cтрока, в которую записывается исходный текст
+    char *sentence = new char[MAX]{}; //Cтрока, в которую записывается исходный текст
 
     get_words(words, MAX, sentence, counter_words);
     
-    char str[MAX]{};//Переменная, которая хранит word[i] в функции low_registr
+    char *str = new char[MAX]{};//Переменная, которая хранит word[i] в функции low_registr
     int length_word = 0;//Переменная, которая определяет длину слова в функции low_registr
+    
     low_registr(words, counter_words, str, length_word);
     
     sort_words(words, counter_words);
@@ -63,5 +64,8 @@ int main(){
     for (int i = 0; i < counter_words; i++){
         cout << words[i] << endl;
     }
+    delete[]sentence;
+    delete[]str;
+    delete[]words;
     return 0;
 }
