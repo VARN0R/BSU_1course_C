@@ -2,7 +2,7 @@
 
 
 
-void inputMatrix(double **Matrix, int rows, int columns)
+void inputMatrix(double **Matrix, int rows, int columns);
 
 void outputMatrix(double **Matrix, int rows, int columns);
 
