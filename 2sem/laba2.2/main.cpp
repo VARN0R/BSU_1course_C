@@ -38,8 +38,8 @@ int main(){
     cout << "Enter size columns: ";
     cin >> columns;
     if (rows != columns){
-        cout << "For exponentation matrix must be square!"
-        return;
+        cout << "For exponentation matrix must be square!";
+        return 1;
     }
     double **Matrix = new double* [rows]{};
     for (int i = 0; i < rows; i++){
