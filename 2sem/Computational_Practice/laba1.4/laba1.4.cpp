@@ -1,12 +1,5 @@
-#define PI 3.14
-
-#include<iostream>
-#include<cmath>
-#include <iomanip>
 #include "laba1.4.h"
 using namespace std;
-
-
 
 float Func1(float x){
     return pow((x-1), 3)-8;
@@ -21,7 +14,6 @@ float DerivativeSecond(float x){
 }
 
 
-
 float Func2(float x, float s){
     return s*pow(cos(PI*x), 2) - pow(x, 1/2);
 }
@@ -33,8 +25,6 @@ float DerivativeFirst2(float x, float s){
 float DerivativeSecond2(float x, float s){
     return -2*s*(-sin(PI*x))*cos(PI*x)-1/(4*pow(x,3/2));
 }
-
-
 
 //(х-1)^3-8 
 void TangentMethod1(float a, float b, float eps, float Func1(float)){
@@ -59,8 +49,6 @@ void TangentMethod1(float a, float b, float eps, float Func1(float)){
     cout << setw(14) <<  "0" << "|" << setw(14) << x_near << "|" << setw(14)  << Func1(x_near)  << "|" << setw(14) << n_iter << "|" <<  endl;
     cout << "--------------+--------------+--------------+--------------+" << endl;
 }
-
-
 
 //s*cos^2(pix) − x              
 void TangentMethod2(float a, float b, float eps, float s_start, float s_end, float s_eps, float Func2(float, float)){

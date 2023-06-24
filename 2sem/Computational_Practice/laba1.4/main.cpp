@@ -25,9 +25,9 @@ n_iter is the number of iterations of the cycle to obtain the root with a given 
 !!!WARNING!!!
 Compile better in OnlineGDB(https://www.onlinegdb.com)
 */
-#include <iostream>
 #include "laba1.4.h"
 using namespace std;
+
 int main(){
     cout << "First method:" << endl;
     TangentMethod1();
