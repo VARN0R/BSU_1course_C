@@ -34,7 +34,7 @@ of the integral values to obtain the specified accuracy):
 !!!WARNING!!!
 Compile better in OnlineGDB(https://www.onlinegdb.com)
 */
-#include <iostream>
+
 #include "laba1.5.h"
 int main(){
     ResultIntegral();

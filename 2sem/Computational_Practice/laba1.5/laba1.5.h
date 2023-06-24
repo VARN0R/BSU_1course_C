@@ -1,4 +1,7 @@
 #pragma once
+#include <iostream>
+#include <cmath>
+#include <iomanip>
 
 float ResultFunc(float x, float t, float s);
 

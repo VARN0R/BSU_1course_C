@@ -1,6 +1,3 @@
-#include <iostream>
-#include <cmath>
-#include <iomanip>
 #include "laba1.5.h"
 using namespace std;
 
