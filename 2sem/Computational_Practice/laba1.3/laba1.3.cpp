@@ -1,4 +1,3 @@
-#include<bits/stdc++.h>
 #include "laba1.3.h"
 using namespace std;
 

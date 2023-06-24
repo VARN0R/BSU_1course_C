@@ -1,6 +1,5 @@
-#include<bits/stdc++.h> 
-#include <iomanip>
 #include "laba1.1.h"
+using namespace std;
 
 void input(int** a, int size){
 	int row1 = 0;
@@ -29,8 +28,8 @@ void input(int** a, int size){
 void output(int** a, int length){
     for (int i = 0; i < length; i++){
         for (int j = 0; j < length; j++){
-            std::cout << std::setw(3) << a[i][j] << " ";
+            cout << setw(3) << a[i][j] << " ";
         }
-        std::cout << std::endl;
+        cout << endl;
     }
 }

@@ -35,7 +35,7 @@ therefore some libraries may be incompatible with Windows.
 
 If you have any errors, try to find analogues of the libraries used.
 */
-#include<bits/stdc++.h> 
+
 #include "laba1.2.h"
 using namespace std;
 
@@ -48,12 +48,12 @@ int main(){
         words[i] = new char[MAX];
     }
     
-    char *sentence = new char[MAX]{}; //Cтрока, в которую записывается исходный текст
+    char *sentence = new char[MAX]{}; // Cтрока, в которую записывается исходный текст
 
     get_words(words, MAX, sentence, counter_words);
     
-    char *str = new char[MAX]{};//Переменная, которая хранит word[i] в функции low_registr
-    int length_word = 0;//Переменная, которая определяет длину слова в функции low_registr
+    char *str = new char[MAX]{};// Переменная, которая хранит word[i] в функции low_registr
+    int length_word = 0;// Переменная, которая определяет длину слова в функции low_registr
     
     low_registr(words, counter_words, str, length_word);
     

@@ -3,17 +3,19 @@
 using namespace std;
 
 void get_words(char** words, const int MAX, char* sentence, int &counter_words){
-	const char* dividers = " .,:;!?-()<<>>";//Набор разделителей, с помощью которых делится текст на слова.
-	//Создание исходной строки:
+	const char* dividers = " .,:;!?-()<<>>";// Набор разделителей, с помощью которых делится текст на слова.
+	
+	// Создание исходной строки:
 	cout << "Enter text: ";
 	cin.getline(sentence,MAX);
-	char *istr;//Переменная, в которую будут заноситься начальные адреса частей строки sentence   
-	istr = strtok (sentence,dividers);//Выделение первой части строки
-	//Выделение последующих частей:
+	char *istr;// Переменная, в которую будут заноситься начальные адреса частей строки sentence   
+	istr = strtok (sentence,dividers);// Выделение первой части строки
+	
+	// Выделение последующих частей:
 	while (istr != NULL){
-		words[counter_words]=istr;//Вывод очередной выделенной части
+		words[counter_words]=istr;// Вывод очередной выделенной части
 		counter_words++;
-		istr = strtok (NULL,dividers);//Выделение очередной части строки
+		istr = strtok (NULL,dividers);// Выделение очередной части строки
 	}
 }
 

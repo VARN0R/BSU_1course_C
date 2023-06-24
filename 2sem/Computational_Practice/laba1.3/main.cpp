@@ -22,9 +22,10 @@ This code was written in a Linux UBUNTU text editor,
 therefore some libraries may be incompatible with Windows.  
 If you have any errors, try to find analogues of the libraries used.
 */
-#include<bits/stdc++.h>
+
 #include "laba1.3.h"
 using namespace std;
+
 int main(){
     int amount_elements;
 

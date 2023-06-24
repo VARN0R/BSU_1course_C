@@ -1,4 +1,3 @@
-#include<bits/stdc++.h>
 #include "laba1.3.variant2.h"
 using namespace std;
 
@@ -17,7 +16,7 @@ int *ReturnMaxValue(int* Array, int amount_elements){
 	}
 
 	if (max_element != nullptr){
-		static bool hasPrinted = false;//Чтобы при вызове функции сout отображался только один раз
+		static bool hasPrinted = false;// Чтобы при вызове функции сout отображался только один раз
 		if (!hasPrinted){
             cout << "The maximum Fibonacci number before changing the array: " << endl;
             hasPrinted = true;

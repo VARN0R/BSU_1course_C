@@ -37,7 +37,7 @@ therefore some libraries may be incompatible with Windows.
 
 If you have any errors, try to find analogues of the libraries used.
 */
-#include<bits/stdc++.h> 
+
 #include "laba1.1.h"
 using namespace std;
 
