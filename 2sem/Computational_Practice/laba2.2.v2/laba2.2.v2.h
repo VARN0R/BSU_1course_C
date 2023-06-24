@@ -1,5 +1,5 @@
 #pragma once
-
+#include <iostream>
 
 int index(int row, int col, int size);
    
