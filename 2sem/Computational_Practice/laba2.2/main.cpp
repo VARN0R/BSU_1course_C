@@ -26,9 +26,9 @@ In the <laba2.2.v2> folder, this problem is in a different way.
 !!!WARNING!!!
 Compile better in OnlineGDB(https://www.onlinegdb.com)
 */
-#include <iostream>
-using namespace std;
+
 #include "laba2.2.h"
+using namespace std;
 
 int main(){
     int rows;

@@ -1,6 +1,5 @@
 #pragma once
-
-
+#include <iostream>
 
 void inputMatrix(double **Matrix, int rows, int columns);
 
