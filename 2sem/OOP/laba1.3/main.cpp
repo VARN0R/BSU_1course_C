@@ -1,18 +1,28 @@
 /*
-Написать программу для работы с базой данных, содержащей записи со све-
-дениями о студентах: ФИО, возраст, пол, курс, успеваемость, в которой должны
+-------------------------------------------------------------------------------
+Написать программу для работы с базой данных, содержащей записи со сведениями
+о студентах: ФИО, возраст, пол, курс, успеваемость, в которой должны
 выполняться следующие действия: создание файла, просмотр файла
 Выполнить задания для бинарного файла. Размер файлов <= 64GiB.
 
 По исходному файлу определить всех отличников. Сформировать файл из
 этих студентов.
+-------------------------------------------------------------------------------
+Write a program to work with a database containing records with information
+about students: full name, age, gender, course, academic performance, in which
+the following actions should be performed: creating a file, viewing a file
+Perform tasks for the binary file. File size <= 64 Gb.
+
+Determine all the excellent students from the source file. Generate a file from
+these students.
+--------------------------------------------------------------------------------
 */
+
 #include <iostream>
 #include <fstream>
 #include <vector>
 
 using namespace std;
-
 
 struct Students {
     char name[20];
