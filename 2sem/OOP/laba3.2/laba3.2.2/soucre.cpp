@@ -21,14 +21,10 @@ void outputMatrix(vector<vector<double>>&Matrix, int rows, int columns){
 
 void Multiplay(vector<vector<double>>&Matrix, int rows, vector<vector<double>>&Matrix2, int columns){
     vector<vector<double>>resultMatrix(rows, vector<double>(columns));
-    
-    for(int k = 0; k < rows; k++){        
-            for(int pos = 0; pos < columns; pos++){
-            int i = 0;
-            int j = 0;
-            while(i < rows && j < columns){
-                resultMatrix[k][pos] += Matrix[pos][j++] * Matrix2[i++][pos];
-              	
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
+            for (int r = 0; r < rows; r++) {
+                resultMatrix[i][j] += Matrix[i][r] * Matrix2[r][j];
             }
         }
     }
